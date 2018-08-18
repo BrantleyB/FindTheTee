@@ -1,18 +1,18 @@
 class UsersController < ApplicationController
     skip_before_action :verify_authenticity_token
     def index
-        render json: Thing.all
+        render json: User.all
     end
     def show
-        render json: Thing.find(params["id"])
+        render json: User.find(params["id"])
     end
     def create
-        render json: Thing.create(params["user"])
+        render json: User.create(params["user"])
     end
     def delete
-        render json: Thing.delete(params["id"])
+        render json: User.delete(params["id"])
     end
     def update
-        render json: Thing.update(params["id"], params["user"])
+        render json: User.update(params["id"], params["user"])
     end
 end

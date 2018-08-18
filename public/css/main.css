@@ -1,0 +1,201 @@
+html,body {
+  /* margin-top: 120px; */
+  background-image: url("https://cdn166.picsart.com/221124750023201.jpg?r1024x1024");
+  background-repeat:repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #6699f6;
+  text-align: center;
+  /* font-family: 'Shadows Into Light', cursive; */
+}
+
+input[type=text] {
+  border: 2px solid #110141;
+  color: #110141;
+  background-color: white;
+  width: 400px;
+  display: block;
+  text-align: center;
+}
+
+div {
+  padding-top: 30px;
+}
+
+h3.tile.is-child.box, p.tile.is-child.box {
+  background-color: white;
+  color: white;
+}
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label.label {
+  font-size: 23px;
+  margin-top: 3px;
+  padding-top: 6px;
+}
+p {
+  font-size: 25px;
+}
+div.courses-column {
+  border: solid olive;
+  background-image: url("https://vignette.wikia.nocookie.net/joke-battles/images/d/dc/Grass-small.png/revision/latest?cb=20180120002827");
+  border-radius: 4px;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 650px;
+}
+/* div.tile.is-2 {
+  width: 200px;
+} */
+table {
+  padding-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.field{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1.title {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  color: white;
+  text-decoration: normal;
+  text-align: center;
+  text-align: center;
+  /* font-family: 'Shadows Into Light', cursive; */
+  padding-bottom: 15px;
+  font-size: 48px;
+}
+
+h1.title:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px darkgreen , 0 0 70px darkgreen , 0 0 80px darkgreen , 0 0 100px darkgreen ;
+}
+}
+h1.title {
+  color: darkgreen;
+  font-size: 100px;
+
+}
+
+h2, h3 {
+  color: white;
+  text-align: center;
+  /* font-family: 'Shadows Into Light', cursive; */
+  padding: 3px;
+  /* margin: 3px; */
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+img:hover {
+  transform: scale(1.5);
+}
+/*Buttons*/
+div.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-submit {
+  background-color: olive;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+.button-fulllist {
+  background-color: #01545a;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
+.button-add-item {
+  background-color: lightgreen;
+  color: black;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+.button-nevermind {
+  background-color: green;
+  color: #e6ffe6;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Arial', sa;
+}
+.button-edit {
+  background-color: #ffffcc;
+  color: #e6ffe6;
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  margin: 3px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Shadows Into Light', cursive;
+}
+.button-delete {
+
+}
+
+.button-fulllist:hover {
+  border: 1px solid white;
+}
+.button-submit:hover {
+  border: 1px solid white;
+}
+.button-add-item:hover {
+  border: 1px solid white;
+}
+button {
+  margin: 3px;
+}
+
+td {
+  margin: 4px;
+  padding: 3px;
+}
+
+div.control {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}

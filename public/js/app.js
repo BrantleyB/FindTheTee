@@ -4,7 +4,7 @@ class App extends React.Component {
       <div className='section'>
         <h1 className='title'>Find the Tee</h1>
         <div className='columns'>
-          <Things />
+          <Courses />
         </div>
       </div>
     )
