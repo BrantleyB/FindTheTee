@@ -30,7 +30,12 @@ class CoursesForm extends React.Component {
   }
   handleSubmit (event) {
     event.preventDefault();
-    this.props.handleSubmit(this.state);
+    if (this.props.editFormVisible == true){
+      this.props.handleUpdateSubmit(this.state)
+      this.props.toggleState('listIsVisible', 'editFormVisible')
+    } else {
+      this.props.handleSubmit(this.state);
+    }
   }
   render () {
     return (
@@ -96,7 +101,7 @@ class CoursesForm extends React.Component {
             <input className='button-submit' type='submit' />
           </div>
         </form>
-        <button className="button-nevermind" onClick={() => this.props.toggleState('listIsVisible', 'addIsVisible')}>Nevermind</button>
+        <button className="button-nevermind" onClick={() => this.props.toggleState('listIsVisible', 'editFormVisible')}>Nevermind</button>
       </div>
     )
   }

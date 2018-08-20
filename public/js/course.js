@@ -35,14 +35,9 @@ class Course extends React.Component {
           </div>
           </div>
         </div>
-        <CoursesForm
-          course={this.props.course}
-          handleSubmit={this.props.handleSubmit}
-          toggleState={this.props.toggleState}
-      />
       <td onClick={
         () => {
-          this.props.toggleState('listIsVisible', 'CourseVisible'); this.props.getCourse(course)
+          this.props.toggleState('CourseVisible', 'editFormVisible');
         }}
       >
           <button className='button is-warning is-small'>Edit</button>
@@ -50,7 +45,8 @@ class Course extends React.Component {
       <td>
           <button
             className='button is-danger is-small'
-            onClick={() => this.props.deleteCourse(course, index)}>Delete</button>
+            onClick={
+              () => {this.props.deleteCourse(this.props.course, this.props.index); this.props.toggleState('listIsVisible', 'CourseVisible')}}>Delete</button>
       </td>
       </div>
     )

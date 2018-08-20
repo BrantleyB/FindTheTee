@@ -8,6 +8,7 @@ class Courses extends React.Component {
       editVisible: false,
       editFormVisible: false,
       courses: [],
+      index: null,
       course: {}
     }
     this.deleteCourse = this.deleteCourse.bind(this)
@@ -47,7 +48,7 @@ class Courses extends React.Component {
     .catch(error => console.log(error))
   }
 
-  deleteCourse(course,index){
+  deleteCourse(course, index){
     fetch('/courses/' + course.id,
   {
     method: 'DELETE'
@@ -76,7 +77,6 @@ class Courses extends React.Component {
       })
       .then(jsonedcourse => {
         this.getCourses();
-        this.toggleState('listIsVisible', 'courseVisible');
       })
       .catch(error => console.log(error));
   }
@@ -91,8 +91,8 @@ class Courses extends React.Component {
       }).catch(error => console.log(error))
   }
 
-  getCourse( course ){
-    this.setState({course:course})
+  getCourse(course, index){
+    this.setState({course:course, index:index})
   }
 
   toggleState(st1, st2){
@@ -116,21 +116,25 @@ class Courses extends React.Component {
             toggleState={this.toggleState}
             courses={this.state.courses}
             getCourse={this.getCourse}
-            deleteCourse={this.deleteCourse}
             /> : ''}
 
-          {this.state.addIsVisible
+          {(this.state.addIsVisible || this.state.editFormVisible)
             ? <CoursesForm
             toggleState={this.toggleState}
             handleCreate={this.handleCreate}
             handleSubmit={this.handleCreateSubmit}
+            course={this.state.course}
+            handleUpdateSubmit={this.handleUpdateSubmit}
+            editFormVisible={this.state.editFormVisible}
             /> : ''}
 
           {this.state.CourseVisible
             ? <Course
             toggleState={this.toggleState}
             course={this.state.course}
-            handleSubmit={this.handleUpdateSubmit}
+            handleUpdateSubmit={this.handleUpdateSubmit}
+            index={this.state.index}
+            deleteCourse={this.deleteCourse}
             /> : ''}
 
       </div>
