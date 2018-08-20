@@ -8,21 +8,23 @@ class CoursesList extends React.Component {
           <tr>
           <td onClick={
             () => {
-              this.props.toggleState('listIsVisible', 'courseVisible'); this.props.getCourse(course)
+              this.props.toggleState('listIsVisible', 'CourseVisible'); this.props.getCourse(course)
             }}
           >
             <img src={course.image} alt={course.name} />
           </td>
           <td onClick={
             () => {
-              this.props.toggleState('listIsVisible', 'courseVisible'); this.props.getCourse(course)
+              this.props.toggleState('listIsVisible', 'CourseVisible'); this.props.getCourse(course)
             }}
           >
             <h3> {course.name} </h3>
+            <h4> {course.location} </h4>
+            <h4> Difficulty: {course.difficulty} </h4>
           </td>
           <td onClick={
             () => {
-              this.props.toggleState('listIsVisible', 'courseVisible'); this.props.getCourse(course)
+              this.props.toggleState('listIsVisible', 'CourseVisible'); this.props.getCourse(course)
             }}
           >
               <button className='button is-warning is-small'>Edit</button>

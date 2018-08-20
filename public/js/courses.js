@@ -6,6 +6,7 @@ class Courses extends React.Component {
       addIsVisible: false,
       CourseVisible: false,
       editVisible: false,
+      editFormVisible: false,
       courses: [],
       course: {}
     }
@@ -74,7 +75,7 @@ class Courses extends React.Component {
         return updatedcourse.json();
       })
       .then(jsonedcourse => {
-        this.getcourses();
+        this.getCourses();
         this.toggleState('listIsVisible', 'courseVisible');
       })
       .catch(error => console.log(error));
@@ -111,22 +112,22 @@ class Courses extends React.Component {
             >Add a course</button>
 
           {this.state.listIsVisible
-            ? <coursesList
+            ? <CoursesList
             toggleState={this.toggleState}
             courses={this.state.courses}
-            getcourse={this.getcourse}
-            deletecourse={this.deletecourse}
+            getCourse={this.getCourse}
+            deleteCourse={this.deleteCourse}
             /> : ''}
 
           {this.state.addIsVisible
-            ? <coursesForm
+            ? <CoursesForm
             toggleState={this.toggleState}
             handleCreate={this.handleCreate}
             handleSubmit={this.handleCreateSubmit}
             /> : ''}
 
-          {this.state.courseVisible
-            ? <course
+          {this.state.CourseVisible
+            ? <Course
             toggleState={this.toggleState}
             course={this.state.course}
             handleSubmit={this.handleUpdateSubmit}

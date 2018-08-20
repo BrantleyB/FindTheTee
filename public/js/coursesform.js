@@ -75,7 +75,7 @@ class CoursesForm extends React.Component {
             <input
               className='input'
               type='text'
-              id='image'
+              id='description'
               onChange={this.handleChange}
               value={this.state.description}
             />
@@ -86,7 +86,7 @@ class CoursesForm extends React.Component {
             <input
               className='input'
               type='text'
-              id='image'
+              id='difficulty'
               onChange={this.handleChange}
               value={this.state.difficulty}
             />

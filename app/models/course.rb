@@ -124,12 +124,12 @@ class Course
           <<-SQL
               UPDATE courses
               SET
-              '#{opts["name"]}',
-               '#{opts["image"]}',
-               '#{opts["location"]}',
-               '#{opts["description"]}',
-               #{opts["difficulty"]},
-              #{opts["user_id"] ? opts["user_id"] : "NULL"}
+              name='#{opts["name"]}',
+              image='#{opts["image"]}',
+              location='#{opts["location"]}',
+              description='#{opts["description"]}',
+              difficulty=#{opts["difficulty"]},
+              user_id=#{opts["user_id"] ? opts["user_id"] : "NULL"}
               WHERE id=#{id}
               RETURNING id, name, image, location, description, difficulty, user_id;
           SQL
