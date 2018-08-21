@@ -1,6 +1,6 @@
 html,body {
   /* margin-top: 120px; */
-  background: white;
+  background: black;
   background-repeat:repeat;
   background-size: cover;
   height: 100%;
@@ -28,6 +28,7 @@ div {
 h3.tile.is-child.box, p.tile.is-child.box {
   background-color: white;
   color: black;
+  font-family: 'Chalkduster', fantasy;
 }
 div.container {
   display: flex;
@@ -39,17 +40,19 @@ label.label {
   font-size: 23px;
   margin-top: 3px;
   padding-top: 6px;
+  color: white;
 }
 p {
   font-size: 25px;
 }
 div.courses-column {
-  background: lightgrey;
+  background: black;
   padding: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 850px;
+  width: 750px;
   height: 900px;
+  font-family: 'Chalkduster', fantasy;
 }
 /* div.tile.is-2 {
   width: 200px;
@@ -72,11 +75,11 @@ h1.title {
   box-sizing: border-box;
   padding: 10px;
   border: black 2px;
-  color: black;
+  color: white;
   text-decoration: normal;
   text-align: center;
   text-align: center;
-  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Chalkduster', fantasy;
   padding-bottom: 15px;
   font-size: 48px;
 }
@@ -87,12 +90,12 @@ h2.title {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
-  border: black 2px;
-  color: black;
+  border: white 2px;
+  color: white;
   text-decoration: normal;
   text-align: center;
   text-align: center;
-  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Chalkduster', fantasy;
   padding-bottom: 15px;
   font-size: 25px;
 }
@@ -108,9 +111,9 @@ h1.title {
 }
 
 h2, h3 {
-  color: black;
-  text-align: left;
-  /* font-family: 'Shadows Into Light', cursive; */
+  color: white;
+  text-align: center;
+  font-family: 'Chalkduster', fantasy;
   padding: 3px;
   /* margin: 3px; */
   font-size: 40px;
@@ -221,11 +224,23 @@ title {
 }
 
 table {
-  background-color: lightgrey;
-  border: black 5px;
+  background-color: black;
+  border: white 5px;
+  width: 750px;
 }
 
 tr {
   padding-top: 10px;
   padding-bottom: 10px;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  color: white;
+  height: 175px;
+  font-family: 'Chalkduster', fantasy;
+}
+
+header {
+  border-style: solid;
+  border-width: 3px;
 }

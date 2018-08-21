@@ -4,7 +4,7 @@ class Course extends React.Component {
       <div>
         <div className='tile is-ancestor'>
           <div className='tile is-2'>
-            <div>
+            <div className='courseImg'>
               <img src={this.props.course.image}
                alt={this.props.course.name} />
             </div>
