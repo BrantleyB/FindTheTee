@@ -1,14 +1,13 @@
 html,body {
   /* margin-top: 120px; */
-  background: black;
-  background-repeat:repeat;
-  background-size: cover;
+  background-image: url("https://www.freewordpressheaders.com/wp-content/gallery/golf/golf-blogspot-header.jpg");
   height: 100%;
   width: 100%;
   margin: 0;
   color: black;
   text-align: center;
-  margin: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
   /* font-family: 'Shadows Into Light', cursive; */
 }
 
@@ -29,29 +28,34 @@ h3.tile.is-child.box, p.tile.is-child.box {
   background-color: white;
   color: black;
   font-family: 'Chalkduster', fantasy;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-width: 3px;
 }
 div.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 
 label.label {
   font-size: 23px;
   margin-top: 3px;
   padding-top: 6px;
-  color: white;
+  color: black;
 }
 p {
   font-size: 25px;
 }
 div.courses-column {
-  background: black;
+  background-color: white 0;
   padding: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 750px;
-  height: 900px;
+  width: 800px;
+  height: 870px;
   font-family: 'Chalkduster', fantasy;
 }
 /* div.tile.is-2 {
@@ -73,9 +77,9 @@ h1.title {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 10px;
-  border: black 2px;
+  border: white 2px;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-decoration: normal;
   text-align: center;
   text-align: center;
@@ -90,8 +94,9 @@ h2.title {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
-  border: white 2px;
+  border: black 2px;
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-decoration: normal;
   text-align: center;
   text-align: center;
@@ -111,18 +116,17 @@ h1.title {
 }
 
 h2, h3 {
-  color: white;
-  text-align: center;
+  color: black;
+  text-align: left;
   font-family: 'Chalkduster', fantasy;
   padding: 3px;
   /* margin: 3px; */
-  font-size: 40px;
+  font-size: 25px;
   padding-bottom: 15px;
 }
 
 img {
-  height: 150px;
-  width: 150px;
+  width: 65%;
 }
 img:hover {
   transform: scale(1.5);
@@ -212,6 +216,7 @@ button {
 td {
   margin: 4px;
   padding: 3px;
+  width: 60%;
 }
 
 div.control {
@@ -221,21 +226,21 @@ div.control {
 
 title {
   font-size: 50px;
+  margin: auto;
+  background: lightgrey;
 }
 
 table {
-  background-color: black;
-  border: white 5px;
-  width: 750px;
+  opacity: 1;
+  box-shadow: 5px;
 }
 
 tr {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: left;
   border-style: solid;
-  border-width: 2px;
-  text-align: center;
-  color: white;
+  color: black;
   height: 175px;
   font-family: 'Chalkduster', fantasy;
 }
@@ -243,4 +248,20 @@ tr {
 header {
   border-style: solid;
   border-width: 3px;
+}
+
+columns {
+  height: 75%;
+}
+
+nav {
+    display: inline;
+    justify-content: right;
+    margin-left: 700px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
 }
