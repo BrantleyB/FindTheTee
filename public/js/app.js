@@ -5,7 +5,7 @@ class App extends React.Component {
       <div className='header'>
         <h1 className='title'>Find the Tee</h1>
         <h2></h2>
-        <h2 className='title'> Find the Perfect Course for You! </h2>
+        <h2 className='title'> Find the Perfect Course for You </h2>
         </div>
         <div className='columns'>
           <Courses />
