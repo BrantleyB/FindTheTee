@@ -1,6 +1,8 @@
 html,body {
   /* margin-top: 120px; */
+  border-radius: 20px;
   background-image: url("https://www.freewordpressheaders.com/wp-content/gallery/golf/golf-blogspot-header.jpg");
+  background-color: lightyellow;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -25,7 +27,7 @@ div {
 }
 
 h3.tile.is-child.box, p.tile.is-child.box {
-  background-color: white;
+  background-color: lightgrey;
   color: black;
   font-family: 'Chalkduster', fantasy;
   padding-top: 20px;
@@ -48,9 +50,10 @@ label.label {
 }
 p {
   font-size: 25px;
+  width: 300px;
 }
 div.courses-column {
-  background-color: white 0;
+  background-color: lightgrey 0;
   padding: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -126,7 +129,7 @@ h2, h3 {
 }
 
 img {
-  width: 65%;
+  width: 100%;
 }
 img:hover {
   transform: scale(1.5);
@@ -264,4 +267,12 @@ h2 {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
+}
+
+tileimg {
+  width: 65%;
+}
+
+courseImg {
+  width: 100%;
 }

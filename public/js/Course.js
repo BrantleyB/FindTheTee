@@ -3,8 +3,8 @@ class Course extends React.Component {
     return (
       <div>
         <div className='tile is-ancestor'>
-          <div className='tile is-2'>
-            <div className='courseImg'>
+          <div className='tileimg'>
+            <div className='img'>
               <img src={this.props.course.image}
                alt={this.props.course.name} />
             </div>

@@ -126,6 +126,7 @@ class Courses extends React.Component {
             course={this.state.course}
             handleUpdateSubmit={this.handleUpdateSubmit}
             editFormVisible={this.state.editFormVisible}
+            flags={['addIsVisible', 'editFormVisible', 'listIsVisible']}
             /> : ''}
 
           {this.state.CourseVisible
